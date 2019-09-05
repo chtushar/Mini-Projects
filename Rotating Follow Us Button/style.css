@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  background-color: black;
+}
+
+#button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#button:before {
+  content: "FOLLOW US";
+  text-align: center;
+  line-height: 50px;
+  font-family: Oswald , Helvetica;
+  font-weight: bolder;
+  font-size: 1em;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 25px;
+  -webkit-animation: decreaseWidth 1s forwards;
+          animation: decreaseWidth 1s forwards;
+}
+
+#button:hover #symbols img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+#button:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: translate(-50%, -50%) rotate(-25deg);
+          transform: translate(-50%, -50%) rotate(-25deg);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+#button #symbols {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#button #symbols img {
+  width: 30px;
+  height: auto;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#button #symbols img:hover {
+  width: 35px;
+  -webkit-transition: width 100ms;
+  transition: width 100ms;
+}
+/*# sourceMappingURL=style.css.map */
