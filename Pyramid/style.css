@@ -1,0 +1,182 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
+.area{
+  height: 500px;
+  width: 500px;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: none;
+  backface-visibility: hidden;
+}
+.area-dark{
+  background-color: #373737;
+}
+.area-opac{
+  clip-path: circle(25.25% at 50% 50%);
+  background-color: #373737;
+  z-index: 3;
+  animation: colors 7s ease-in-out;
+}
+.area-back{
+  clip-path: circle(25% at 50% 50%);
+  background-color: #7DDFFC;
+}
+
+.sand{
+width: 100%;
+height: 50%;
+background-color: #F0DE75;
+position: absolute;
+top: 60%;
+}
+.pyramid{
+  width: 150px;
+  height: 80px;
+  background-color: #ced5e0;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pyramid-color 7s ease-in-out;
+}
+
+.pyramid-left{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  clip-path: polygon(0 100%, 50% 0, 60% 100%);
+  animation: pyramid-left-color 7s ease-in-out;
+}
+
+.sun{
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(255, 255, 0, 0.12), 0 1px 2px rgba(255, 255, 0, 0.4);
+  animation: sun-setting 7s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.shadow{
+  width: 200px;
+  height: 80px;
+  background-color: black;
+  clip-path: polygon(12% 0, 100% 0, 87.5% 0);
+  opacity: 0.3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: shadow-of-pyramid 7s ease-in-out;
+}
+
+
+
+@keyframes shadow-of-pyramid{
+  0%{
+    clip-path: polygon(12% 0, 100% 0, 87.5% 0);
+  }
+  30%{
+    clip-path: polygon(12% 0, 70% 30%, 87.5% 0);
+  }
+
+  60%{
+    clip-path: polygon(12% 0, 50% 30%, 87.5% 0);
+  }
+  80%{
+    clip-path: polygon(12% 0, 30% 20%, 87.5% 0);
+  }
+  100%{
+    clip-path: polygon(12% 0, 0 0, 87.5% 0);
+  }
+}
+
+@keyframes sun-setting{
+  0%{
+    top: 50%;
+    left: 10%;
+  }
+  30%{
+    top: 35%;
+    left: 35%;
+  }
+  60%{
+    top: 30%;
+    left: 45%;
+  }
+  80%{
+    top: 35%;
+    left: 55%;
+  }
+  100%{
+    top: 50%;
+    left: 80%;
+  }
+}
+@keyframes colors{
+  0%{
+    background-color: #373737;
+  }
+  30%{
+   background-color: rgba(240, 163, 48, 0.3);
+  }
+  60%{
+    background-color: rgba(240, 163, 48, 0.0);
+  }
+  80%{
+    background-color: rgba(240, 163, 48, 0.3);
+  }
+  100%{
+    background-color: #373737;
+  }
+}
+
+@keyframes pyramid-left-color{
+  0%{
+    background-color: white;
+  }
+  30%{
+    background-color: white;
+  }
+  60%{
+    background-color: #ced5e0;
+  }
+  80%{
+    background-color: #ced5e0;
+  }
+  100%{
+    background-color: #ced5e0;
+  }
+}
+
+@keyframes pyramid-color{
+  0%{
+    background-color: #ced5e0;
+  }
+  30%{
+    background-color: #ced5e0;
+  }
+  60%{
+    background-color: #ced5e0;
+  }
+  80%{
+    background-color: white;
+  }
+  100%{
+    background-color: white;
+  }
+}
