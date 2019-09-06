@@ -4,4 +4,4 @@
 
 2. Pyramid: https://rawcdn.githack.com/chtushar/Mini-Projects/c92a793dfd56f9caa74acd33ca3b814105c1f6b0/Pyramid/index.html
 
-  3.Eat Sleep Code Repeat: https://rawcdn.githack.com/chtushar/Mini-  Projects/ce7b164fb4de9b0d0ffea665d4347a38cfb7e3d9/Eat%20Sleep%20Code%20Repeat/index.html
+  3.Eat Sleep Code Repeat: https://rawcdn.githack.com/chtushar/Mini-Projects/ce7b164fb4de9b0d0ffea665d4347a38cfb7e3d9/Eat%20Sleep%20Code%20Repeat/index.html
