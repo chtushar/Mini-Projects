@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Eat Sleep Code Repeat</title>
+</head>
+<body>
+  <div class="container">
+  <div class="lines">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+  </div>
+  <div class="text">
+    <div>EAT</div>
+    <div>SLEEP</div>
+    <div>CODE</div>
+    <div>REPEAT</div>
+  </div>
+</div>
+
+
+
+<script>
+  var container = document.querySelector('.container');
+
+  container.addEventListener('click',()=>{
+    container.classList.toggle('play');
+    console.log(container.classList);
+  })
+</script>
+</body>
+</html>
