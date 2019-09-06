@@ -1,3 +1,3 @@
 # Mini-Projects
 
-1. Lid Follow Us Button : https://rawcdn.githack.com/chtushar/Mini-Projects/09feb739af044847c9043d479cabc5ca11e30cb8/Rotating%20Follow%20Us%20Button/index.html
+1. Lid Follow Us Button : https://rawcdn.githack.com/chtushar/Mini-Projects/c35393c0bc8016ed35ffda8ad4f42e0f5aeb17a9/Lid%20Follow%20Us%20Button/index.html
