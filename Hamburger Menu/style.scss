@@ -1,0 +1,123 @@
+$background-color: black;
+$primary-color: yellow;
+
+@mixin middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin line{
+  width: 50px;
+  height: 10px;
+  background-color: $primary-color;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: $background-color;
+}
+
+.container{
+  @include middle;
+  .box{
+    height: 60px;
+    width: 60px;
+    @include middle;
+  }
+  .lines{
+
+    .line-1{
+      @include line;
+      transform: translateY(-100%);
+    }
+    .line-2{
+      @include line;
+    }
+    .line-3{
+      @include line;
+      transform: translateY(100%);
+    }
+  }
+}
+
+.play{
+  .box{
+    animation: boxRotate 1.5s forwards cubic-bezier(.17,.67,.83,.67);
+  }
+  .lines{
+    animation: rotateLines 2s forwards cubic-bezier(.17,.67,.83,.67);
+
+    .line-1{
+      animation: line-1-animation 1.5s forwards cubic-bezier(.17,.67,.83,.67);
+    }
+    .line-2{
+      animation: line-2-animation 0.5s forwards cubic-bezier(.17,.67,.83,.67);
+    }
+    .line-3{
+      animation: line-3-animation 1.5s forwards cubic-bezier(.17,.67,.83,.67);
+    }
+
+  }
+}
+
+@keyframes boxRotate{
+  from{
+    transform: translate(-50%,-50%);
+  }
+  to{
+    transform: translate(-50%,-50%) rotate(360deg);
+    background-color: $primary-color;
+  }
+}
+
+@keyframes rotateLines{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes line-1-animation{
+  0%{
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(100%) rotate(45deg);
+    background-color: $background-color;
+  }
+}
+@keyframes line-2-animation{
+  from{
+
+  }
+  to{
+    transform: scale3d(0);
+    opacity: 0;
+  }
+}
+@keyframes line-3-animation{
+  0%{
+    transform: translateY(100%);
+  }
+  50%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(-100%) rotate(-45deg);
+    background-color: $background-color;
+  }
+}
+

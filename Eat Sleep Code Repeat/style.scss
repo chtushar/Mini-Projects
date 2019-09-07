@@ -11,7 +11,7 @@
 @mixin line{
   width: 80px;
   height: 5px;
-  background-color: white;
+  background-color: yellow;
 }
 
 *{
@@ -19,11 +19,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Oswald, 'sans-serif';
-  color: white;
+  color: yellow;
 }
 
 body, html{
-  background-color: rgb(5, 2, 44);
+  background-color: black;
 }
 
 .container{

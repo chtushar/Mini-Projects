@@ -5,11 +5,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Oswald, 'sans-serif';
-  color: white;
+  color: yellow;
 }
 
 body, html {
-  background-color: #05022c;
+  background-color: black;
 }
 
 .container {
@@ -28,7 +28,7 @@ body, html {
 .container .lines .line-1 {
   width: 80px;
   height: 5px;
-  background-color: white;
+  background-color: yellow;
   margin-bottom: 25px;
   -webkit-animation: line-1-close 1s forwards;
           animation: line-1-close 1s forwards;
@@ -37,7 +37,7 @@ body, html {
 .container .lines .line-2 {
   width: 80px;
   height: 5px;
-  background-color: white;
+  background-color: yellow;
   margin-top: 25px;
   -webkit-animation: line-2-close 1s forwards;
           animation: line-2-close 1s forwards;

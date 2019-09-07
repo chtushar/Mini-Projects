@@ -19,11 +19,11 @@ body{
   backface-visibility: hidden;
 }
 .area-dark{
-  background-color: #373737;
+  background-color: black;
 }
 .area-opac{
   clip-path: circle(25.25% at 50% 50%);
-  background-color: #373737;
+  background-color: black;
   z-index: 3;
   animation: colors 7s ease-in-out;
 }
@@ -129,7 +129,7 @@ top: 60%;
 }
 @keyframes colors{
   0%{
-    background-color: #373737;
+    background-color:black;
   }
   30%{
    background-color: rgba(240, 163, 48, 0.3);
@@ -141,7 +141,7 @@ top: 60%;
     background-color: rgba(240, 163, 48, 0.3);
   }
   100%{
-    background-color: #373737;
+    background-color: black;
   }
 }
 
