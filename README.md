@@ -6,4 +6,6 @@
 
 3.Eat Sleep Code Repeat: https://rawcdn.githack.com/chtushar/Mini-Projects/9c95e0215f6661c0d66e8dcb82f78f7baa02490f/Eat%20Sleep%20Code%20Repeat/index.html
 
-4.Hamburger Menu: https://rawcdn.githack.com/chtushar/Mini-Projects/9c95e0215f6661c0d66e8dcb82f78f7baa02490f/Hamburger%20Menu/index.html
+4.Hamburger Menu-1: https://rawcdn.githack.com/chtushar/Mini-Projects/9c95e0215f6661c0d66e8dcb82f78f7baa02490f/Hamburger%20Menu/index.html
+
+5.Hamburger Menu-2: https://rawcdn.githack.com/chtushar/Mini-Projects/46e07f8b930ccc18af8ae737dc894acaeef2f014/Hamburger%20Menu-2/index.html
