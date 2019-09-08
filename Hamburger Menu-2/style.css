@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 50px;
+  background-color: black;
+  position: relative;
+
+}
+.board{
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  margin: auto;
+  }
+  #icon{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .line-1, .line-2, .line-3{
+    width: 200px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    transition-duration: 0.7s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+/*CHANGING COLOR ON HOVER*/
+ /* .color-lines .line{
+    background: rgb(38, 41, 45);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .color-lines-rm .line{
+    background: white;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+*/
+  /*TRANSFORMING THE LINES*/
+  .menu-cross .line-1{
+    animation: animate-line-1 0.7s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .menu-cross .line-2{
+    transform: scale(0);
+    transition: transform 0.7s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  .menu-cross .line-3{
+    animation: animate-line-3 0.7s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+
+  @keyframes animate-line-1 {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(55px) rotate(0);
+    }
+
+    100% {
+      transform: translateY(55px) rotate(225deg);
+    }
+
+  }
+
+  @keyframes animate-line-3 {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-55px) rotate(0);
+    }
+
+    100% {
+      transform: translateY(-55px) rotate(-45deg);
+    }
+
+  }
+
+/*REVERSING TRANSFORMATION*/
+
+.menu-default .line-1{
+  animation: animate-line-1-rev 0.7s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menu-default .line-2{
+  transform: scale(1);
+  transition: transform 0.7s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.menu-default .line-3{
+  animation: animate-line-3-rev 0.7s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes animate-line-1-rev {
+  0% {
+    transform: translateY(55px) rotate(-225deg);
+
+  }
+  50% {
+    transform: translateY(55px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+}
+
+@keyframes animate-line-3-rev {
+  0% {
+    transform: translateY(-55px) rotate(45deg);
+
+  }
+  50% {
+    transform: translateY(-55px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+}
