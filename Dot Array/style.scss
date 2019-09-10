@@ -1,0 +1,260 @@
+$background-color: black;
+$primary-color: yellow;
+$dot-width: 30px;
+
+
+@mixin middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin dot{
+  width: $dot-width;
+  height: $dot-width;
+  background-color: $primary-color;
+  border-radius: $dot-width/2;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: $background-color;
+}
+
+
+.container{
+  width: 100%;
+  .dot-1{
+    @include dot;
+    @include middle;
+    animation: dot-1 4s both;
+  }
+  .dot-2{
+    @include dot;
+    @include middle;
+    animation: dot-2 4s both;
+  }
+  .dot-3{
+    @include dot;
+    @include middle;
+    animation: dot-3 4s both;
+  }
+  .dot-4{
+    @include dot;
+    @include middle;
+    animation: dot-4 4s both;
+  }
+  .dot-5{
+    @include dot;
+    @include middle;
+    animation: dot-5 4s both;
+  }
+  .dot-6{
+    @include dot;
+    @include middle;
+    animation: dot-6 4s  both;
+  }
+  .dot-7{
+    @include dot;
+    @include middle;
+    animation: dot-7 4s both;
+  }
+  .dot-8{
+    @include dot;
+    @include middle;
+    animation: dot-8 4s both;
+  }
+  .dot-9{
+    @include dot;
+    @include middle;
+    animation: dot-9 4s both;
+  }
+}
+
+
+@keyframes dot-1{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(-250%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(-250%, -200%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%, -200%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes dot-2{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(-50%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(-50%, -200%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%, -200%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes dot-3{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(150%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(150%, -200%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%, -200%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@keyframes dot-4{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(-250%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(-250%,-50%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%,-50%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes dot-5{
+  0%{
+
+  }
+  25%{
+
+    background-color: red;
+  }
+  50%{
+
+    background-color: green;
+  }
+  75%{
+
+  }
+  100%{
+
+  }
+}
+
+@keyframes dot-6{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(150%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(150%,-50%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%,-50%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes dot-7{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(-250%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(-250%, 100%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%, 100%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes dot-8{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(-50%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(-50%, 100%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%, 100%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes dot-9{
+  0%{
+    transform: translate(-50%,-50%);
+  }
+  25%{
+    transform: translate(150%,-50%);
+    background-color: red;
+  }
+  50%{
+    transform: translate(150%, 100%);
+    background-color: green;
+  }
+  75%{
+    transform: translate(-50%, 100%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
