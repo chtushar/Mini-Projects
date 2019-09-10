@@ -9,3 +9,5 @@
 4.Hamburger Menu-1: https://rawcdn.githack.com/chtushar/Mini-Projects/9c95e0215f6661c0d66e8dcb82f78f7baa02490f/Hamburger%20Menu/index.html
 
 5.Hamburger Menu-2: https://rawcdn.githack.com/chtushar/Mini-Projects/46e07f8b930ccc18af8ae737dc894acaeef2f014/Hamburger%20Menu-2/index.html
+
+6. Dot Array Loading: https://rawcdn.githack.com/chtushar/Mini-Projects/63877dfb4a5093ddc9a166953009637e81229287/Dot%20Array/index.html
