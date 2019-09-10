@@ -33,47 +33,47 @@ html, body{
   .dot-1{
     @include dot;
     @include middle;
-    animation: dot-1 4s both;
+    animation: dot-1 4s both infinite;
   }
   .dot-2{
     @include dot;
     @include middle;
-    animation: dot-2 4s both;
+    animation: dot-2 4s both infinite;
   }
   .dot-3{
     @include dot;
     @include middle;
-    animation: dot-3 4s both;
+    animation: dot-3 4s both infinite;
   }
   .dot-4{
     @include dot;
     @include middle;
-    animation: dot-4 4s both;
+    animation: dot-4 4s both infinite;
   }
   .dot-5{
     @include dot;
     @include middle;
-    animation: dot-5 4s both;
+    animation: dot-5 4s both infinite;
   }
   .dot-6{
     @include dot;
     @include middle;
-    animation: dot-6 4s  both;
+    animation: dot-6 4s  both infinite;
   }
   .dot-7{
     @include dot;
     @include middle;
-    animation: dot-7 4s both;
+    animation: dot-7 4s both infinite;
   }
   .dot-8{
     @include dot;
     @include middle;
-    animation: dot-8 4s both;
+    animation: dot-8 4s both infinite;
   }
   .dot-9{
     @include dot;
     @include middle;
-    animation: dot-9 4s both;
+    animation: dot-9 4s both infinite;
   }
 }
 

@@ -23,8 +23,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-1 4s both;
-          animation: dot-1 4s both;
+  -webkit-animation: dot-1 4s both infinite;
+          animation: dot-1 4s both infinite;
 }
 
 .container .dot-2 {
@@ -37,8 +37,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-2 4s both;
-          animation: dot-2 4s both;
+  -webkit-animation: dot-2 4s both infinite;
+          animation: dot-2 4s both infinite;
 }
 
 .container .dot-3 {
@@ -51,8 +51,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-3 4s both;
-          animation: dot-3 4s both;
+  -webkit-animation: dot-3 4s both infinite;
+          animation: dot-3 4s both infinite;
 }
 
 .container .dot-4 {
@@ -65,8 +65,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-4 4s both;
-          animation: dot-4 4s both;
+  -webkit-animation: dot-4 4s both infinite;
+          animation: dot-4 4s both infinite;
 }
 
 .container .dot-5 {
@@ -79,8 +79,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-5 4s both;
-          animation: dot-5 4s both;
+  -webkit-animation: dot-5 4s both infinite;
+          animation: dot-5 4s both infinite;
 }
 
 .container .dot-6 {
@@ -93,8 +93,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-6 4s  both;
-          animation: dot-6 4s  both;
+  -webkit-animation: dot-6 4s  both infinite;
+          animation: dot-6 4s  both infinite;
 }
 
 .container .dot-7 {
@@ -107,8 +107,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-7 4s both;
-          animation: dot-7 4s both;
+  -webkit-animation: dot-7 4s both infinite;
+          animation: dot-7 4s both infinite;
 }
 
 .container .dot-8 {
@@ -121,8 +121,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-8 4s both;
-          animation: dot-8 4s both;
+  -webkit-animation: dot-8 4s both infinite;
+          animation: dot-8 4s both infinite;
 }
 
 .container .dot-9 {
@@ -135,8 +135,8 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: dot-9 4s both;
-          animation: dot-9 4s both;
+  -webkit-animation: dot-9 4s both infinite;
+          animation: dot-9 4s both infinite;
 }
 
 @-webkit-keyframes dot-1 {
