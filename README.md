@@ -13,3 +13,5 @@
 6. Dot Array Loading: https://rawcdn.githack.com/chtushar/Mini-Projects/63877dfb4a5093ddc9a166953009637e81229287/Dot%20Array/index.html
 
 7. Change Perspective on Mouse Move: https://rawcdn.githack.com/chtushar/Mini-Projects/40f03e2b8ff66d607c85db92e47e937153b385ee/Change%20Perspective%20on%20Mouse%20Move/index.html
+
+8.Strike Through: https://rawcdn.githack.com/chtushar/Mini-Projects/ce8c7530224050d27e33fd44af0f25e05e46dcf4/Strike%20Through/index.html
