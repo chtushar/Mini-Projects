@@ -15,3 +15,7 @@
 7. Change Perspective on Mouse Move: https://rawcdn.githack.com/chtushar/Mini-Projects/40f03e2b8ff66d607c85db92e47e937153b385ee/Change%20Perspective%20on%20Mouse%20Move/index.html
 
 8.Strike Through: https://rawcdn.githack.com/chtushar/Mini-Projects/ce8c7530224050d27e33fd44af0f25e05e46dcf4/Strike%20Through/index.html
+
+9. Kaleidoscope: https://rawcdn.githack.com/chtushar/Mini-Projects/d80a5704036f3d50c0b13d1f117399050d7b3333/Kaleidoscope/index.html
+
+10.Loading: https://rawcdn.githack.com/chtushar/Mini-Projects/2d6cae117f81963f13f7b2299f8ed4bc4899e613/Loading/index.html
