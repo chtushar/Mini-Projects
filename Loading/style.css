@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: Oswald;
+  font-size: 48px;
+}
+
+.container span {
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: load 2s infinite;
+          animation: load 2s infinite;
+}
+
+.container span:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.container span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.container span:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.container span:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.container span:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.container span:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.container span:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+@-webkit-keyframes load {
+  0% {
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-left: 0;
+  }
+  25% {
+    color: black;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    margin-left: 10px;
+    text-shadow: 0 25px 5px black;
+  }
+  100% {
+    color: rgba(255, 255, 0, 0.5);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-left: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-left: 0;
+  }
+  25% {
+    color: black;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    margin-left: 10px;
+    text-shadow: 0 25px 5px black;
+  }
+  100% {
+    color: rgba(255, 255, 0, 0.5);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
