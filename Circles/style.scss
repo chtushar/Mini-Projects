@@ -1,0 +1,52 @@
+$background-color: black;
+$primary-color: yellow;
+$circle: 300px;
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+
+
+
+@mixin middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container{
+  @include middle;
+
+  .circle{
+    @include middle;
+    width: $circle;
+    height: $circle;
+    border-radius: $circle/2;
+    border: 0.5px solid black;
+    animation: rotate 5s ease-in-out infinite;
+   }
+}
+
+
+@keyframes rotate{
+  0%{
+    transform: translate(-50%,-50%) rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100%{
+    transform: translate(-50%,-50%) rotateX(360deg) rotateY(-360deg) rotateZ(0);
+  }
+}
+
+
