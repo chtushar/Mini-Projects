@@ -1,0 +1,61 @@
+$size: 30px;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+
+  .triangle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    background-color: transparent;
+  }
+  .triangle div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: $size;
+    height: $size;
+    background-color: black;
+    clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
+    //clip-path: polygon(0% 100%,50% 0%,100% 100%);
+    animation: rotate 8s ease-in-out infinite;
+  }
+}
+
+@keyframes rotate{
+  0%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  25%{
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+  40%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  50%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  75%{
+    transform: translate(-50%,-50%) rotate(-360deg);
+  }
+  90%{
+    transform: translate(-50%,-50%) rotate(-360deg);
+  }
+  100%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+}
