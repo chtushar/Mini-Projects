@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Albums</title>
+</head>
+<body>
+  <div class="container" >
+    <img src="Eminem.svg" class="hero"/>
+    <div class="wrapper">
+        <div id="section-1">
+            <div class="child-wrapper-1" onmouseout="backgroundColorChange(315, 0)">
+              <div class="sec-child" data-index="1" data-hue="36" data-sat="70" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="kamikaze.jpg" class="image" onmouseover="backgroundColorChange(36, 70)">
+              </div>
+              <div class="sec-child" data-index="2" data-hue="286" data-sat="16" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="revival.jpg" class="image" onmouseover="backgroundColorChange(286, 16)">
+              </div>
+              <div class="sec-child" data-index="3" data-hue="191" data-sat="57" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="recovery.jpg" class="image" onmouseover="backgroundColorChange(191, 57)"/>
+              </div>
+              <div class="sec-child" data-index="4" data-hue="5" data-sat="43" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="relapse.jpg" class="image" onmouseover="backgroundColorChange(5, 43)"/>
+              </div>
+              <div class="sec-child" data-index="5" data-hue="211" data-sat="79" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="encore.jpg" class="image" onmouseover="backgroundColorChange(211, 79)"/>
+              </div>
+              <div class="sec-child" data-index="6" data-hue="358" data-sat="70" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="theEminemShow.jpg" class="image" onmouseover="backgroundColorChange(358, 70)"/>
+              </div>
+              <div class="sec-child" data-index="7" data-hue="16" data-sat="6" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="theMarshallMattersLP.jpg" class="image" onmouseover="backgroundColorChange(16, 6)"/>
+              </div>
+              <div class="sec-child" data-index="8" data-hue="52" data-sat="64" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="theMarshallMattersLP2.jpg" class="image"/ onmouseover="backgroundColorChange(52, 64)"></div>
+              <div class="sec-child" data-index="9" data-hue="246" data-sat="42" onmouseover="scaleIn(this)" onmouseout="scaleOut(this)">
+                <img src="theslimshadyLP.jpg" class="image" onmouseover="backgroundColorChange(246, 42)"/>
+              </div>
+            </div>
+        </div>
+        <div id="section-2">
+          <div class="child-wrapper-2">
+
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

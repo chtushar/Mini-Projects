@@ -1,0 +1,118 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-height: 100vh;
+  width: 100%;
+  background-color: hsl(315, 0%, 85%);
+}
+
+.container{
+  #wrapper{
+    overflow: hidden;
+  }
+
+  .hero{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 300px;
+    height: auto;
+    opacity: 0;
+  }
+}
+
+#section-1{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .child-wrapper-1{
+    margin: 250px auto;
+    width: 675px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    .sec-child{
+      cursor: pointer;
+      transform-origin: 50% 50%;
+      height: 300px;
+      width: 75px;
+      //background-color: #000;
+      transition: background-color 200ms ease-in forwards;
+      overflow: hidden;
+      img{
+        height: 100%;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.sec-child-scaleIn{
+  z-index: 99999;
+  animation: box 600ms forwards;
+}
+.sec-child-scaleOut{
+  animation: box1 600ms forwards;
+}
+
+#section-2{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0vh;
+  overflow: hidden;
+  background-color: #000;
+  transform-origin: bottom;
+  .child-wrapper-2{
+    margin: 250px auto;
+    width: 675px;
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    .sec-child-2{
+      cursor: pointer;
+      transform-origin: 50% 50%;
+      height: 300px;
+      width: 75px;
+      //background-color: #000;
+      animation: box1 600ms forwards;
+      &:hover{
+        z-index: 9999;
+        animation: box 500ms forwards;
+      }
+    }
+  }
+}
+
+
+@keyframes box{
+  from{
+    height: 300px;
+    width: 75px;
+    transform: scale(1);
+  }
+  to{
+    height: 300px;
+    width: 70%;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes box1{
+  from{
+    height: 300px;
+    width: 70%;
+    transform: scale(1.1);
+  }
+  to{
+    height: 300px;
+    width: 75px;
+    transform: scale(1);
+  }
+}
